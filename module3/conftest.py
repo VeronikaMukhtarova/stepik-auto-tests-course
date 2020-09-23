@@ -16,7 +16,7 @@ def browser(request):
     options = Options()
 
     options.add_experimental_option('prefs', \
-										{'intl.accept_languages': user_language})
+	                {'intl.accept_languages': user_language})
     print("\nStart chrome browser for test...")
     browser = webdriver.Chrome(options=options)
     browser.implicitly_wait(5)
